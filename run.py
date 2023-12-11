@@ -5,7 +5,7 @@ import os
 # URL of the file
 URL = "https://raw.githubusercontent.com/rg772/cli-wp-campuspress-ready/main/plugins.dat"
 
-
+# load URL
 def load_url_into_array(URL):
     # Send a GET request to the URL
     try:
