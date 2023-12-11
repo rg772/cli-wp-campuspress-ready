@@ -1,4 +1,4 @@
-import requests
+import urllib2
 import sys
 import os
 
@@ -8,16 +8,8 @@ URL = "https://raw.githubusercontent.com/rg772/cli-wp-campuspress-ready/main/plu
 
 def load_url_into_array(URL):
     # Send a GET request to the URL
-    response = requests.get(URL)
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        arr = response.text.split('\n')
-        return arr
-    else:
-        print(f"Failed to fetch the file. HTTP status code: {response.status_code}")
-        return None
-
+    try:
+        response = urllib2.urlopen(URL)
 
 def check_folder_exists(path):
     if not os.path.isdir(path):
