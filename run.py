@@ -16,7 +16,6 @@ def check_folder_exists(path):
         print(f"Directory {path} does not exist.")
         sys.exit()
 
-
 def get_directories(path):
     return [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
 
