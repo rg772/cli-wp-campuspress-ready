@@ -11,7 +11,7 @@ def load_url_into_array(URL):
     try:
         response = urllib2.urlopen(URL)
 
-def check_folder_exists(path):
+def check_folder_exists(path): 
     if not os.path.isdir(path):
         print(f"Directory {path} does not exist.")
         sys.exit()
