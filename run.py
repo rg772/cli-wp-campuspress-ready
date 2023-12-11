@@ -29,14 +29,14 @@ def get_directories(path):
     return [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
 
 
-# Get arget folder
-target_folder = sys.argv[1] 
+# Get arget folder, 
+target_folder = sys.argv[1]
 
 # Checks
 check_folder_exists(target_folder)
 
 # Call the function and print the result
-plugins_expected = load_url_into_array()
+plugins_expected = load_url_into_array(URL)
 
 # Scan folder 
 folders_existing = get_directories(target_folder)
