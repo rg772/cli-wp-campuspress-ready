@@ -30,7 +30,7 @@ def get_directories(path):
 
 
 # Get arget folder, 
-target_folder = sys.argv[1]
+target_folder = input("Enter folder path")
 
 # Checks
 check_folder_exists(target_folder)
