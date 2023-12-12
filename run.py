@@ -10,6 +10,9 @@ def load_url_into_array(URL):
     # Send a GET request to the URL
     try:
         response = urllib2.urlopen(URL)
+    catch: 
+        print(f"Whoa whoa whoa.. that {URL} cannot be found.")
+        sys.exit()
 
 # check folder exists
 
