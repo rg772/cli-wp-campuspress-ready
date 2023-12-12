@@ -18,7 +18,7 @@ def load_url_into_array(URL):
 
 def check_folder_exists(path): 
     if not os.path.isdir(path):
-        print(f"Directory {path} does not exist.")
+        print("Directory {} does not exist.".format(path))
         sys.exit()
 
 def get_directories(path):
