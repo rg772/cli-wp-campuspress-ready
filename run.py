@@ -11,7 +11,7 @@ def load_url_into_array(URL):
     try:
         response = urllib2.urlopen(URL)
     except: 
-        print(f"Whoa whoa whoa.. that {URL} cannot be found.")
+        print("Whoa whoa whoa.. that {} cannot be found.".format(URL))
         sys.exit()
 
 # check folder exists
